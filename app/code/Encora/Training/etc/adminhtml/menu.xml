@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Encora_Training::employee" title="Encora Employee" module="Encora_Training" sortOrder="51" resource="Encora_Training::employee"/>
+
+        <add 
+            id="Encora_Training::add_employee" 
+            title="Add Employee" 
+            module="Encora_Training" 
+            sortOrder="10" 
+            action="encora_training/employee/new" 
+            resource="Encora_Training::add_employee" 
+            parent="Encora_Training::employee"/>
+
+        <add 
+            id="Encora_Training::manage_employee" 
+            title="Manage Employee" 
+            module="Encora_Training" 
+            sortOrder="10" 
+            action="encora_training/employee/index" 
+            resource="Encora_Training::manage_employee" 
+            parent="Encora_Training::employee"/>
+    </menu>
+</config>
