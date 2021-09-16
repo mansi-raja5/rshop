@@ -3,5 +3,7 @@
     <type name="Magento\Catalog\Model\Product">
         <plugin name="plugin_for_product_name" type="Encora\Training\Plugins\Product" sortOrder="10" disabled="false"  />
     </type>
+
+    <preference for="Magento\Catalog\Model\Product" type="Encora\Training\Model\Product" />
 </config>
 
